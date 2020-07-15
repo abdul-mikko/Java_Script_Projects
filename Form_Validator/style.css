@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f9fafb;
+}
+
+.container {
+  box-shadow: 0px 5px 10px 10px rgba(0, 0, 0, 0.2);
+  min-width: 400px;
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.form .form-control {
+  position: relative;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+.form .form-control label {
+  display: block;
+  margin-bottom: 5px;
+}
+.form .form-control input {
+  display: block;
+  width: 100%;
+  font-size: 15px;
+  border: 2px solid gray;
+  outline: 0;
+  margin-bottom: 5px;
+  padding: 8px;
+  border-radius: 3px;
+}
+
+.form .form-control.success input {
+  border: 3px solid rgb(61, 238, 61);
+}
+.form .form-control.error input {
+  border: 3px solid #f01e1efb;
+}
+
+.form .form-control small {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  font-size: 15px;
+  visibility: hidden;
+}
+.form .form-control.error small {
+  visibility: visible;
+  color: rgba(253, 16, 16, 0.986);
+}
+button {
+  display: block;
+  width: 100%;
+  background: rgb(139, 197, 214);
+  border: 2px solid rgb(114, 184, 219);
+  font-size: 18px;
+  border-radius: 3px;
+  padding: 10px;
+  cursor: pointer;
+}
